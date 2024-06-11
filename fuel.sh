@@ -34,9 +34,13 @@ echo "正在生成P2P密钥..."
 KEY_OUTPUT=$(fuel-core-keygen new --key-type peering)
 echo "${KEY_OUTPUT}"
 SECRET=$(echo $KEY_OUTPUT | jq -r '.secret')
+echo "${SECRET}"
+# 创建文件夹路径，确保中间路径存在
+DIR_PATH="$HOME/root/~/"
+mkdir -p "$DIR_PATH"
 
 # 创建文件路径
-FILE_PATH="$HOME/root/key.txt"
+FILE_PATH="$DIR_PATH/key.txt"
 
 # 将 SECRET 写入文件中
 echo $SECRET > $FILE_PATH
@@ -75,6 +79,11 @@ function check_service_status() {
     screen -r Fuel
 }
 
+function backup() {
+    mkdir -p $HOME/root/fuel_key
+    cp $HOME/root/~/key.txt $HOME/root/fuel_key/
+
+}
 
 # 主菜单
 function main_menu() {

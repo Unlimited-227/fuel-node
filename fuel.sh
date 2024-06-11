@@ -72,7 +72,7 @@ screen -dmS Fuel bash -c "source /root/.bashrc; fuel-core run \
 "
 
 echo "节点配置完成并尝试启动。请使用screen -r Fuel 以确认节点状态。"
-
+screen -r Fuel
 }
 
 function check_service_status() {

@@ -82,8 +82,8 @@ function check_service_status() {
 }
 
 function backup() {
-    mkdir -p $HOME/root/fuel_key
-    cp $HOME/root/~/key.txt $HOME/fuel_key/
+    mkdir -p $HOME/fuel_key
+    cp $HOME/~/key.txt $HOME/fuel_key/
 }
 
 function uninstall() {

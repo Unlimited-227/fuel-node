@@ -31,7 +31,7 @@ function install_node() {
     export PATH=$HOME/.fuelup/bin:$PATH
     
     # 创建文件夹路径，确保中间路径存在
-    DIR_PATH="$HOME/root/~/"
+    DIR_PATH="$HOME/~/"
     mkdir -p "$DIR_PATH"
 
     read -p 'Enter your secret: ' SECRET
@@ -79,8 +79,8 @@ function check_service_status() {
 }
 
 function backup() {
-    mkdir -p $HOME/root/fuel_key
-    cp $HOME/root/~/key.txt $HOME/root/fuel_key/
+    mkdir -p $HOME/fuel_key
+    cp $HOME/~/key.txt $HOME/fuel_key/
 }
 
 function uninstall() {

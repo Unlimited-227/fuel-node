@@ -8,7 +8,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # 脚本保存路径
-SCRIPT_PATH="$HOME/Fuel.sh"
+SCRIPT_PATH="$HOME/fuel.sh"
 
 function install_node() {
     # 安装基本组件

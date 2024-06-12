@@ -33,7 +33,7 @@ function install_node() {
     KEY_OUTPUT=$(fuel-core-keygen new --key-type peering)
     echo "${KEY_OUTPUT}"
     SECRET=$(echo $KEY_OUTPUT | jq -r '.secret')
-    echo "${SECRET}"
+    echo "请保存好你的钱包私钥：${SECRET}"
     
     # 创建文件夹路径，确保中间路径存在
     DIR_PATH="$HOME/~/"

@@ -35,6 +35,7 @@ function install_node() {
     mkdir -p "$DIR_PATH"
 
     read -p 'Enter your secret: ' SECRET
+    echo "请保存好你的钱包私钥：${SECRET}"
 
     # 创建文件路径
     FILE_PATH="$DIR_PATH/key.txt"

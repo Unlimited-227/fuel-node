@@ -84,7 +84,8 @@ function backup() {
 }
 
 function uninstall() {
-    echo "卸载节点功能尚未实现。"
+   rm -rf /root/~
+   rm -rf /root/chain-configuration
 }
 
 # 主菜单

@@ -86,6 +86,8 @@ function backup() {
 
 function uninstall() {
    rm -rf /root/~
+   rm -rf /root/.fuelup
+   rm -rf /root/.forc
    rm -rf /root/chain-configuration
 }
 
